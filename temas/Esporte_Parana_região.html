@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>jornal estudantil</title>
+    
+</head>
+<body>
+<section class="barra">
+    <img id="icone-menu" src="assets\material-symbols_menu-rounded.png">
+    <p class="title" >JORNAL ESTUDANTIL</p>
+</section>
+
+    <nav id="lista-menu">
+    <ul>
+      <li><a href="#">Esporte</a>
+    <ul id="lista">
+          <li><a href="#">Paraná</a></li>
+          <li><a href="#">Brasil</a></li>
+          <li><a href="#">Mundo</a></li>
+    </ul>
+      </li>
+      <li><a href="#">Politica</a>
+    <ul>
+        <li id="lista" ><a href="#">SJP/Paraná</a></li>
+        <li id="lista2" ><a href="'#">Mundo/Brasil</a></li>
+    </ul>
+      </li>
+      <li><a href="#">Saude</a>
+        </li>
+        <li><a href="#">Fique ligado</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+<script>
+  // Seleciona o item do menu Brasil pelo seu texto
+  var brasil = document.querySelector("ul#menu li a:contains('Brasil')");
+  // Seleciona o submenu do Brasil pelo seu id
+  var submenuBrasil = document.getElementById("submenu-brasil");
+  // Adiciona um evento de mouseover ao item do menu Brasil
+  brasil.addEventListener("mouseover", function() {
+    // Alterna a propriedade display do submenu do Brasil entre none e block
+    if (submenuBrasil.style.display === "none") {
+      submenuBrasil.style.display = "block";
+    } else {
+      submenuBrasil.style.display = "none";
+    }
+  });
+  // Adiciona um evento de mouseout ao item do menu Brasil
+  brasil.addEventListener("mouseout", function() {
+    // Alterna a propriedade display do submenu do Brasil entre none e block
+    if (submenuBrasil.style.display === "none") {
+      submenuBrasil.style.display = "block";
+    } else {
+      submenuBrasil.style.display = "none";
+    }
+  });
+  
+  // Repete o mesmo processo para o item do menu Mundo e seu respectivo submenu
+  var mundo = document.querySelector("ul#menu li a:contains('Mundo')");
+  var submenuMundo = document.getElementById("submenu-mundo");
+  mundo.addEventListener("mouseover", function() {
+    if (submenuMundo.style.display === "none") {
+      submenuMundo.style.display = "block";
+    } else {
+      submenuMundo.style.display = "none";
+    }
+  });
+  mundo.addEventListener("mouseout", function() {
+    if (submenuMundo.style.display === "none") {
+      submenuMundo.style.display = "block";
+    } else {
+      submenuMundo.style.display = "none";
+    }
+  });
+</script>
+</html>
