@@ -73,3 +73,22 @@ color: #FFFFFF;
 #lista-menu li:hover ul {
   display: block;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #D82222;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
