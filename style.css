@@ -320,9 +320,6 @@ a, a:visited, a:hover, a:active{
     max-height:200px;
   }
 }
-
-
-
 /*-------------------*/
 .grid-layout {
     display: grid;
@@ -355,5 +352,3 @@ a, a:visited, a:hover, a:active{
     grid-column-end: span 3;
     grid-row-end: span 4;
 }
-message.txt
-5 KB
