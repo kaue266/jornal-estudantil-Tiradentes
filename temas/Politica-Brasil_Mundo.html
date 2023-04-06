@@ -38,45 +38,18 @@
 </body>
 
 <script>
-  // Seleciona o item do menu Brasil pelo seu texto
-  var brasil = document.querySelector("ul#menu li a:contains('Brasil')");
-  // Seleciona o submenu do Brasil pelo seu id
-  var submenuBrasil = document.getElementById("submenu-brasil");
-  // Adiciona um evento de mouseover ao item do menu Brasil
-  brasil.addEventListener("mouseover", function() {
-    // Alterna a propriedade display do submenu do Brasil entre none e block
-    if (submenuBrasil.style.display === "none") {
-      submenuBrasil.style.display = "block";
-    } else {
-      submenuBrasil.style.display = "none";
-    }
-  });
-  // Adiciona um evento de mouseout ao item do menu Brasil
-  brasil.addEventListener("mouseout", function() {
-    // Alterna a propriedade display do submenu do Brasil entre none e block
-    if (submenuBrasil.style.display === "none") {
-      submenuBrasil.style.display = "block";
-    } else {
-      submenuBrasil.style.display = "none";
-    }
-  });
+
+  var icone = document.getElementById("icone-menu");
+   
+  var lista = document.getElementById("lista-menu");
+  icone.addEventListener("click", function() {
   
-  // Repete o mesmo processo para o item do menu Mundo e seu respectivo submenu
-  var mundo = document.querySelector("ul#menu li a:contains('Mundo')");
-  var submenuMundo = document.getElementById("submenu-mundo");
-  mundo.addEventListener("mouseover", function() {
-    if (submenuMundo.style.display === "none") {
-      submenuMundo.style.display = "block";
-    } else {
-      submenuMundo.style.display = "none";
-    }
-  });
-  mundo.addEventListener("mouseout", function() {
-    if (submenuMundo.style.display === "none") {
-      submenuMundo.style.display = "block";
-    } else {
-      submenuMundo.style.display = "none";
-    }
-  });
+      if (lista.style.display === "none") {
+        lista.style.display = "block";
+      } else {
+        lista.style.display = "none";
+      }
+    });
+  </script>
 </script>
 </html>
