@@ -1,4 +1,10 @@
-
+@font-face {
+  font-family:"Times New Roman";
+  src: url(temas\fonts\times-new-roman-14.ttf);
+}
+*{
+  font-family: “Times New Roman”, “Georgia”, serif;
+}
 
 body{
     margin: 0px;
@@ -20,10 +26,11 @@ body{
 }
 .title{
     left: 50%;
+    margin-top: 3%;
     text-align: center;
     text-shadow: #444;
 
-    font-family: 'Merriweather Sans';
+    font-family: “Times New Roman”, “Georgia”, serif;
     font-style: normal;
     font-size: 150%;
     line-height: 50px;
@@ -181,4 +188,7 @@ hr {
     grid-auto-rows: minmax(200px, auto);
     grid-auto-flow: dense;
     padding: 8px;
+}
+.conteudo{
+  position: absolute;
 }
