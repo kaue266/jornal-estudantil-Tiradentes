@@ -3,6 +3,8 @@
   src: url(temas\fonts\times-new-roman-14.ttf);
 }
 *{
+  max-width: 1440px;
+  max-height: 500px;
   font-family: “Times New Roman”, “Georgia”, serif;
 }
 
@@ -26,7 +28,7 @@ body{
 }
 .title{
     left: 50%;
-    margin-top: 3%;
+    margin-top:22px;
     text-align: center;
     text-shadow: #444;
 
@@ -144,8 +146,7 @@ hr {
         flex-wrap:wrap; 
         justify-content:center; 
         align-items:center; 
-        margin:auto; 
-        max-width:1200px; 
+        margin: auto;
         padding-top:50px; 
         padding-bottom:50px
     }
