@@ -44,6 +44,7 @@ body{
 }
 
 #lista-menu {
+  position: absolute;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   width: 200px;
@@ -158,5 +159,5 @@ hr {
     }
     .news p {
         font-size:16px; 
-        margin-top:-10px
+        margin-top:10px
     }
