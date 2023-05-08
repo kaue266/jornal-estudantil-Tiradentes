@@ -1,17 +1,25 @@
-let os = require('os');
+var OSName = "Unknown OS";
+		if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
+		if (navigator.userAgent.indexOf("Mac") != -1) OSName = "Macintosh";
+		if (navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
+		if (navigator.userAgent.indexOf("Android") != -1) OSName = "Android";
+
+
 let cssPath = '';
 
-if (os.platform() === 'win32') {
+if (OSName === 'Windows') {
   // Windows
   cssPath = 'css/windows.css';
-} else if (os.platform() === 'android') {
+} else if (OSName === 'android') {
   // Mac
   cssPath = 'css/android.css';
-} else if (os.platform() === 'linux') {
+} else if (OSName === 'linux') {
   // Linux
   cssPath = 'css/linux.css';
+} else if(OSName === Macintosh){
+ //mac
+ cssPath = 'css/default' 
 } else {
   // Outro sistema
   cssPath = 'css/default.css';
 }
-console.log('O sistema operacional do usuário é ' + os.platform());
